@@ -1,0 +1,13 @@
+CRITICAL - 2024-11-06 05:25:40 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "visit/properti/properti.php"
+[Method: GET, Route: properti]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('visit/properti/properti.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/properti', [], true)
+ 3 APPPATH\Controllers\Properti.php(9): view('visit/properti/properti')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')

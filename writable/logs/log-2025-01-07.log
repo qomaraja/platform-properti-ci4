@@ -1,0 +1,89 @@
+INFO - 2025-01-07 07:01:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-07 07:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-07 07:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-01-07 07:59:11 --> [DEPRECATED] trim(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Properti.php on line 32.
+ 1 APPPATH\Controllers\Properti.php(32): trim(null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti\\public\\index.php')
+INFO - 2025-01-07 07:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-07 08:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-07 08:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-07 08:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-07 08:25:32 --> ErrorException: Undefined variable $art
+[Method: GET, Route: toko/ubah-toko/1]
+in APPPATH\Views\admin\toko\ubah_toko.php on line 16.
+ 1 APPPATH\Views\admin\toko\ubah_toko.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $art', 'F:\\PROJECT\\Proses\\properti\\app\\Views\\admin\\toko\\ubah_toko.php', 16)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti\\app\\Views\\admin\\toko\\ubah_toko.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/toko/ubah_toko', [], true)
+ 5 APPPATH\Controllers\Toko.php(144): view('admin/toko/ubah_toko', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Toko->ubahToko('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Toko))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti\\public\\index.php')
+CRITICAL - 2025-01-07 08:26:16 --> ErrorException: Undefined array key "toko_isi"
+[Method: GET, Route: toko/ubah-toko/1]
+in APPPATH\Views\admin\toko\ubah_toko.php on line 45.
+ 1 APPPATH\Views\admin\toko\ubah_toko.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "toko_isi"', 'F:\\PROJECT\\Proses\\properti\\app\\Views\\admin\\toko\\ubah_toko.php', 45)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti\\app\\Views\\admin\\toko\\ubah_toko.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/toko/ubah_toko', [], true)
+ 5 APPPATH\Controllers\Toko.php(144): view('admin/toko/ubah_toko', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Toko->ubahToko('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Toko))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti\\public\\index.php')
+INFO - 2025-01-07 09:52:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-07 09:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-07 09:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-07 09:58:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-07 09:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-07 09:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-07 09:58:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-07 09:58:35 --> ErrorException: Undefined variable $ap
+[Method: GET, Route: toko/data-toko]
+in APPPATH\Views\admin\toko\data_toko.php on line 44.
+ 1 APPPATH\Views\admin\toko\data_toko.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ap', 'F:\\PROJECT\\Proses\\properti\\app\\Views\\admin\\toko\\data_toko.php', 44)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti\\app\\Views\\admin\\toko\\data_toko.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/toko/data_toko', [], true)
+ 5 APPPATH\Controllers\Toko.php(81): view('admin/toko/data_toko', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Toko->toko()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Toko))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti\\public\\index.php')
+INFO - 2025-01-07 09:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-07 10:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-07 10:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-07 10:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-07 17:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-07 17:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-07 17:51:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-07 17:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-07 17:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-07 17:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-07 17:52:10 --> BadMethodCallException: Call to undefined method App\Models\TokoModel::getAllTokoWithKat
+[Method: GET, Route: toko/data-toko]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Toko.php(71): CodeIgniter\Model->__call('getAllTokoWithKat', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Toko->toko()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Toko))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti\\public\\index.php')

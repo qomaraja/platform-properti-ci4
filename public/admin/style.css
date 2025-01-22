@@ -1,0 +1,13 @@
+.content .btn-delete {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.content .img-preview img {
+  aspect-ratio: 5/4;
+  width: 100%;
+  height: auto;
+}

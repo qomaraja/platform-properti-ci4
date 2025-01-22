@@ -1,0 +1,35 @@
+CRITICAL - 2024-11-08 02:48:45 --> ErrorException: Undefined variable $active
+[Method: GET, Route: properti/detail]
+in APPPATH\Views\visit\layout\template.php on line 48.
+ 1 APPPATH\Views\visit\layout\template.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $active', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\layout\\template.php', 48)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('visit/layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/detail', [], true)
+ 6 APPPATH\Controllers\Properti.php(31): view('visit/properti/detail', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->detail()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-08 03:34:39 --> ErrorException: Undefined variable $breadcrumbs
+[Method: GET, Route: artikel]
+in APPPATH\Views\visit\layout\breadcrumb.php on line 6.
+ 1 APPPATH\Views\visit\layout\breadcrumb.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $breadcrumbs', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\layout\\breadcrumb.php', 6)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\layout\\breadcrumb.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('visit/layout/breadcrumb', null, true)
+ 5 APPPATH\Views\visit\artikel\artikel.php(6): CodeIgniter\View\View->include('visit/layout/breadcrumb')
+ 6 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\artikel\\artikel.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/artikel/artikel', [], true)
+ 9 APPPATH\Controllers\Artikel.php(14): view('visit/artikel/artikel', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')

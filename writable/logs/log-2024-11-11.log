@@ -1,0 +1,997 @@
+ERROR - 2024-11-11 06:28:15 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'properti', 3306, '', 0)
+#1 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 F:\PROJECT\Proses\properti2\app\Models\PropModel.php(31): CodeIgniter\Model->countAllResults()
+#6 F:\PROJECT\Proses\properti2\app\Controllers\Dashboard.php(34): App\Models\PropModel->hitungSemuaProp()
+#7 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+#8 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 F:\PROJECT\Proses\properti2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('F:\\PROJECT\\Pros...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#4 F:\PROJECT\Proses\properti2\app\Models\PropModel.php(31): CodeIgniter\Model->countAllResults()
+#5 F:\PROJECT\Proses\properti2\app\Controllers\Dashboard.php(34): App\Models\PropModel->hitungSemuaProp()
+#6 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+#7 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#8 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\PROJECT\Proses\properti2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('F:\\PROJECT\\Pros...')
+#13 {main}
+CRITICAL - 2024-11-11 06:28:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `data_prop`', [], false)
+ 3 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 4 APPPATH\Models\PropModel.php(31): CodeIgniter\Model->countAllResults()
+ 5 APPPATH\Controllers\Dashboard.php(34): App\Models\PropModel->hitungSemuaProp()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+INFO - 2024-11-11 06:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 11:41:18 --> ErrorException: Undefined array key "prop_img"
+[Method: POST, Route: properti/simpan-properti]
+in APPPATH\Controllers\Properti.php on line 114.
+ 1 APPPATH\Controllers\Properti.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prop_img"', 'F:\\PROJECT\\Proses\\properti2\\app\\Controllers\\Properti.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->simpanProp()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+INFO - 2024-11-11 11:41:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 11:42:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-11 11:43:44 --> mysqli_sql_exception: Column 'tipe_id' cannot be null in F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `da...', 0)
+#1 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 F:\PROJECT\Proses\properti2\app\Controllers\Properti.php(103): CodeIgniter\BaseModel->save(Array)
+#9 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Properti->simpanProp()
+#10 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+#11 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 F:\PROJECT\Proses\properti2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('F:\\PROJECT\\Pros...')
+#16 {main}
+CRITICAL - 2024-11-11 11:43:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'tipe_id' cannot be null
+[Method: POST, Route: properti/simpan-properti]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (:prop_nm:, :prop_slug:, :tipe_id:, :prop_lb:, :prop_lt:, :prop_kt:, :prop_km:, :prop_almt:, :prop_kd_almt:, :prop_isi:, :prop_hrg:, :prop_kpr:, :prop_bunga:, :prop_info_kpr:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Properti.php(103): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->simpanProp()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 11:43:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'tipe_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'\', \'\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 11:43:44\', \'2024-11-11 11:43:44\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'\', \'\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 11:43:44\', \'2024-11-11 11:43:44\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (:prop_nm:, :prop_slug:, :tipe_id:, :prop_lb:, :prop_lt:, :prop_kt:, :prop_km:, :prop_almt:, :prop_kd_almt:, :prop_isi:, :prop_hrg:, :prop_kpr:, :prop_bunga:, :prop_info_kpr:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Properti.php(103): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->simpanProp()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 11:43:44 --> [Caused by] mysqli_sql_exception: Column 'tipe_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'\', \'\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 11:43:44\', \'2024-11-11 11:43:44\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'\', \'\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 11:43:44\', \'2024-11-11 11:43:44\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'\', \'\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 11:43:44\', \'2024-11-11 11:43:44\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (:prop_nm:, :prop_slug:, :tipe_id:, :prop_lb:, :prop_lt:, :prop_kt:, :prop_km:, :prop_almt:, :prop_kd_almt:, :prop_isi:, :prop_hrg:, :prop_kpr:, :prop_bunga:, :prop_info_kpr:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Properti.php(103): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->simpanProp()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+INFO - 2024-11-11 11:43:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 11:43:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-11 12:22:21 --> mysqli_sql_exception: Column 'tipe_id' cannot be null in F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `da...', 0)
+#1 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 F:\PROJECT\Proses\properti2\app\Controllers\Properti.php(103): CodeIgniter\BaseModel->save(Array)
+#9 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Properti->simpanProp()
+#10 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+#11 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 F:\PROJECT\Proses\properti2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('F:\\PROJECT\\Pros...')
+#16 {main}
+CRITICAL - 2024-11-11 12:22:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'tipe_id' cannot be null
+[Method: POST, Route: properti/simpan-properti]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (:prop_nm:, :prop_slug:, :tipe_id:, :prop_lb:, :prop_lt:, :prop_kt:, :prop_km:, :prop_almt:, :prop_kd_almt:, :prop_isi:, :prop_hrg:, :prop_kpr:, :prop_bunga:, :prop_info_kpr:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Properti.php(103): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->simpanProp()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 12:22:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'tipe_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'\', \'\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 12:22:21\', \'2024-11-11 12:22:21\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'\', \'\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 12:22:21\', \'2024-11-11 12:22:21\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (:prop_nm:, :prop_slug:, :tipe_id:, :prop_lb:, :prop_lt:, :prop_kt:, :prop_km:, :prop_almt:, :prop_kd_almt:, :prop_isi:, :prop_hrg:, :prop_kpr:, :prop_bunga:, :prop_info_kpr:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Properti.php(103): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->simpanProp()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 12:22:21 --> [Caused by] mysqli_sql_exception: Column 'tipe_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'\', \'\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 12:22:21\', \'2024-11-11 12:22:21\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'\', \'\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 12:22:21\', \'2024-11-11 12:22:21\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'\', \'\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 12:22:21\', \'2024-11-11 12:22:21\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (:prop_nm:, :prop_slug:, :tipe_id:, :prop_lb:, :prop_lt:, :prop_kt:, :prop_km:, :prop_almt:, :prop_kd_almt:, :prop_isi:, :prop_hrg:, :prop_kpr:, :prop_bunga:, :prop_info_kpr:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Properti.php(103): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->simpanProp()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+ERROR - 2024-11-11 12:23:41 --> mysqli_sql_exception: Column 'tipe_id' cannot be null in F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `da...', 0)
+#1 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 F:\PROJECT\Proses\properti2\app\Controllers\Properti.php(103): CodeIgniter\BaseModel->save(Array)
+#9 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Properti->simpanProp()
+#10 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+#11 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 F:\PROJECT\Proses\properti2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('F:\\PROJECT\\Pros...')
+#16 {main}
+CRITICAL - 2024-11-11 12:23:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'tipe_id' cannot be null
+[Method: POST, Route: properti/simpan-properti]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (:prop_nm:, :prop_slug:, :tipe_id:, :prop_lb:, :prop_lt:, :prop_kt:, :prop_km:, :prop_almt:, :prop_kd_almt:, :prop_isi:, :prop_hrg:, :prop_kpr:, :prop_bunga:, :prop_info_kpr:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Properti.php(103): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->simpanProp()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 12:23:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'tipe_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'jokolilo\', \'jokolilo\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 12:23:41\', \'2024-11-11 12:23:41\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'jokolilo\', \'jokolilo\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 12:23:41\', \'2024-11-11 12:23:41\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (:prop_nm:, :prop_slug:, :tipe_id:, :prop_lb:, :prop_lt:, :prop_kt:, :prop_km:, :prop_almt:, :prop_kd_almt:, :prop_isi:, :prop_hrg:, :prop_kpr:, :prop_bunga:, :prop_info_kpr:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Properti.php(103): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->simpanProp()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 12:23:41 --> [Caused by] mysqli_sql_exception: Column 'tipe_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'jokolilo\', \'jokolilo\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 12:23:41\', \'2024-11-11 12:23:41\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'jokolilo\', \'jokolilo\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 12:23:41\', \'2024-11-11 12:23:41\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'jokolilo\', \'jokolilo\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 12:23:41\', \'2024-11-11 12:23:41\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (:prop_nm:, :prop_slug:, :tipe_id:, :prop_lb:, :prop_lt:, :prop_kt:, :prop_km:, :prop_almt:, :prop_kd_almt:, :prop_isi:, :prop_hrg:, :prop_kpr:, :prop_bunga:, :prop_info_kpr:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Properti.php(103): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->simpanProp()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+ERROR - 2024-11-11 12:24:20 --> mysqli_sql_exception: Column 'tipe_id' cannot be null in F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `da...', 0)
+#1 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 F:\PROJECT\Proses\properti2\app\Controllers\Properti.php(103): CodeIgniter\BaseModel->save(Array)
+#9 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Properti->simpanProp()
+#10 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+#11 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 F:\PROJECT\Proses\properti2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('F:\\PROJECT\\Pros...')
+#16 {main}
+CRITICAL - 2024-11-11 12:24:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'tipe_id' cannot be null
+[Method: POST, Route: properti/simpan-properti]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (:prop_nm:, :prop_slug:, :tipe_id:, :prop_lb:, :prop_lt:, :prop_kt:, :prop_km:, :prop_almt:, :prop_kd_almt:, :prop_isi:, :prop_hrg:, :prop_kpr:, :prop_bunga:, :prop_info_kpr:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Properti.php(103): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->simpanProp()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 12:24:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'tipe_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'\', \'\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 12:24:20\', \'2024-11-11 12:24:20\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'\', \'\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 12:24:20\', \'2024-11-11 12:24:20\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (:prop_nm:, :prop_slug:, :tipe_id:, :prop_lb:, :prop_lt:, :prop_kt:, :prop_km:, :prop_almt:, :prop_kd_almt:, :prop_isi:, :prop_hrg:, :prop_kpr:, :prop_bunga:, :prop_info_kpr:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Properti.php(103): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->simpanProp()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 12:24:20 --> [Caused by] mysqli_sql_exception: Column 'tipe_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'\', \'\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 12:24:20\', \'2024-11-11 12:24:20\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'\', \'\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 12:24:20\', \'2024-11-11 12:24:20\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'\', \'\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 12:24:20\', \'2024-11-11 12:24:20\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (:prop_nm:, :prop_slug:, :tipe_id:, :prop_lb:, :prop_lt:, :prop_kt:, :prop_km:, :prop_almt:, :prop_kd_almt:, :prop_isi:, :prop_hrg:, :prop_kpr:, :prop_bunga:, :prop_info_kpr:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Properti.php(103): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->simpanProp()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+ERROR - 2024-11-11 12:24:46 --> mysqli_sql_exception: Column 'tipe_id' cannot be null in F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `da...', 0)
+#1 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 F:\PROJECT\Proses\properti2\app\Controllers\Properti.php(103): CodeIgniter\BaseModel->save(Array)
+#9 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Properti->simpanProp()
+#10 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+#11 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 F:\PROJECT\Proses\properti2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('F:\\PROJECT\\Pros...')
+#16 {main}
+CRITICAL - 2024-11-11 12:24:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'tipe_id' cannot be null
+[Method: POST, Route: properti/simpan-properti]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (:prop_nm:, :prop_slug:, :tipe_id:, :prop_lb:, :prop_lt:, :prop_kt:, :prop_km:, :prop_almt:, :prop_kd_almt:, :prop_isi:, :prop_hrg:, :prop_kpr:, :prop_bunga:, :prop_info_kpr:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Properti.php(103): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->simpanProp()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 12:24:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'tipe_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'\', \'\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 12:24:46\', \'2024-11-11 12:24:46\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'\', \'\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 12:24:46\', \'2024-11-11 12:24:46\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (:prop_nm:, :prop_slug:, :tipe_id:, :prop_lb:, :prop_lt:, :prop_kt:, :prop_km:, :prop_almt:, :prop_kd_almt:, :prop_isi:, :prop_hrg:, :prop_kpr:, :prop_bunga:, :prop_info_kpr:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Properti.php(103): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->simpanProp()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 12:24:46 --> [Caused by] mysqli_sql_exception: Column 'tipe_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'\', \'\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 12:24:46\', \'2024-11-11 12:24:46\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'\', \'\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 12:24:46\', \'2024-11-11 12:24:46\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (\'\', \'\', NULL, \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'\', \'2024-11-11 12:24:46\', \'2024-11-11 12:24:46\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_prop` (`prop_nm`, `prop_slug`, `tipe_id`, `prop_lb`, `prop_lt`, `prop_kt`, `prop_km`, `prop_almt`, `prop_kd_almt`, `prop_isi`, `prop_hrg`, `prop_kpr`, `prop_bunga`, `prop_info_kpr`, `created_at`, `updated_at`) VALUES (:prop_nm:, :prop_slug:, :tipe_id:, :prop_lb:, :prop_lt:, :prop_kt:, :prop_km:, :prop_almt:, :prop_kd_almt:, :prop_isi:, :prop_hrg:, :prop_kpr:, :prop_bunga:, :prop_info_kpr:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Properti.php(103): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->simpanProp()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+INFO - 2024-11-11 12:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 12:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 12:28:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 12:28:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 12:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 12:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 12:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 12:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 12:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 12:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 12:34:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 13:22:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 13:22:44 --> ErrorException: Undefined array key "tipe_nm"
+[Method: GET, Route: properti/ubah-properti/4]
+in APPPATH\Views\admin\properti\ubah_prop.php on line 34.
+ 1 APPPATH\Views\admin\properti\ubah_prop.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tipe_nm"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/properti/ubah_prop', [], true)
+ 5 APPPATH\Controllers\Properti.php(149): view('admin/properti/ubah_prop', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->ubahProp('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 13:24:12 --> ErrorException: Undefined array key "prop_img"
+[Method: GET, Route: properti/ubah-properti/4]
+in APPPATH\Views\admin\properti\ubah_prop.php on line 124.
+ 1 APPPATH\Views\admin\properti\ubah_prop.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prop_img"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php', 124)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/properti/ubah_prop', [], true)
+ 5 APPPATH\Controllers\Properti.php(149): view('admin/properti/ubah_prop', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->ubahProp('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+INFO - 2024-11-11 13:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 13:40:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 13:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 13:42:56 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: properti/ubah-properti/5]
+in APPPATH\Views\admin\properti\ubah_prop.php on line 116.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/properti/ubah_prop', [], true)
+ 4 APPPATH\Controllers\Properti.php(150): view('admin/properti/ubah_prop', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->ubahProp('5')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 14:06:36 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: properti/ubah-properti/5]
+in APPPATH\Views\admin\properti\ubah_prop.php on line 113.
+ 1 APPPATH\Views\admin\properti\ubah_prop.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php', 113)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/properti/ubah_prop', [], true)
+ 5 APPPATH\Controllers\Properti.php(150): view('admin/properti/ubah_prop', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->ubahProp('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 14:09:31 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: properti/ubah-properti/5]
+in APPPATH\Views\admin\properti\ubah_prop.php on line 114.
+ 1 APPPATH\Views\admin\properti\ubah_prop.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php', 114)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/properti/ubah_prop', [], true)
+ 5 APPPATH\Controllers\Properti.php(150): view('admin/properti/ubah_prop', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->ubahProp('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 15:21:14 --> ErrorException: Array to string conversion
+[Method: GET, Route: properti/ubah-properti/5]
+in APPPATH\Views\admin\properti\ubah_prop.php on line 116.
+ 1 APPPATH\Views\admin\properti\ubah_prop.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php', 116)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/properti/ubah_prop', [], true)
+ 5 APPPATH\Controllers\Properti.php(150): view('admin/properti/ubah_prop', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->ubahProp('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 15:22:00 --> ErrorException: Undefined array key "prop_img"
+[Method: GET, Route: properti/ubah-properti/5]
+in APPPATH\Views\admin\properti\ubah_prop.php on line 178.
+ 1 APPPATH\Views\admin\properti\ubah_prop.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prop_img"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php', 178)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/properti/ubah_prop', [], true)
+ 5 APPPATH\Controllers\Properti.php(150): view('admin/properti/ubah_prop', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->ubahProp('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 15:59:17 --> ErrorException: Undefined array key "prop_img"
+[Method: GET, Route: properti/ubah-properti/5]
+in APPPATH\Views\admin\properti\ubah_prop.php on line 18.
+ 1 APPPATH\Views\admin\properti\ubah_prop.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prop_img"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php', 18)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/properti/ubah_prop', [], true)
+ 5 APPPATH\Controllers\Properti.php(150): view('admin/properti/ubah_prop', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->ubahProp('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+INFO - 2024-11-11 16:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 16:03:09 --> ErrorException: Undefined array key "prop_img"
+[Method: GET, Route: properti/ubah-properti/5]
+in APPPATH\Views\admin\properti\ubah_prop.php on line 18.
+ 1 APPPATH\Views\admin\properti\ubah_prop.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prop_img"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php', 18)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/properti/ubah_prop', [], true)
+ 5 APPPATH\Controllers\Properti.php(150): view('admin/properti/ubah_prop', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->ubahProp('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+INFO - 2024-11-11 16:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 16:03:18 --> ErrorException: Undefined array key "prop_img"
+[Method: GET, Route: properti/ubah-properti/11]
+in APPPATH\Views\admin\properti\ubah_prop.php on line 18.
+ 1 APPPATH\Views\admin\properti\ubah_prop.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prop_img"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php', 18)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/properti/ubah_prop', [], true)
+ 5 APPPATH\Controllers\Properti.php(150): view('admin/properti/ubah_prop', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->ubahProp('11')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+INFO - 2024-11-11 16:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-11 16:30:49 --> mysqli_sql_exception: Operand should contain 1 column(s) in F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `da...', 0)
+#1 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 F:\PROJECT\Proses\properti2\app\Controllers\Properti.php(198): CodeIgniter\BaseModel->save(Array)
+#9 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Properti->updateProp('5')
+#10 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+#11 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 F:\PROJECT\Proses\properti2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('F:\\PROJECT\\Pros...')
+#16 {main}
+CRITICAL - 2024-11-11 16:30:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Operand should contain 1 column(s)
+[Method: POST, Route: properti/update-properti/5]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_img_prop` (`prop_id`, `prop_img`) VALUES (:prop_id:, :prop_img:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Properti.php(198): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->updateProp('5')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 16:30:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_img_prop` (`prop_id`, `prop_img`) VALUES (\'5\', (\'1731300119_74964205c73587112a2d.jpg\',\'1731300119_bd4855024730bbe79f25.jpeg\',\'1731300119_e58bdf6b3164ee35f6de.jpg\'))')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_img_prop` (`prop_id`, `prop_img`) VALUES (\'5\', (\'1731300119_74964205c73587112a2d.jpg\',\'1731300119_bd4855024730bbe79f25.jpeg\',\'1731300119_e58bdf6b3164ee35f6de.jpg\'))')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_img_prop` (`prop_id`, `prop_img`) VALUES (:prop_id:, :prop_img:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Properti.php(198): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->updateProp('5')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 16:30:49 --> [Caused by] mysqli_sql_exception: Operand should contain 1 column(s)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `data_img_prop` (`prop_id`, `prop_img`) VALUES (\'5\', (\'1731300119_74964205c73587112a2d.jpg\',\'1731300119_bd4855024730bbe79f25.jpeg\',\'1731300119_e58bdf6b3164ee35f6de.jpg\'))', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_img_prop` (`prop_id`, `prop_img`) VALUES (\'5\', (\'1731300119_74964205c73587112a2d.jpg\',\'1731300119_bd4855024730bbe79f25.jpeg\',\'1731300119_e58bdf6b3164ee35f6de.jpg\'))')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_img_prop` (`prop_id`, `prop_img`) VALUES (\'5\', (\'1731300119_74964205c73587112a2d.jpg\',\'1731300119_bd4855024730bbe79f25.jpeg\',\'1731300119_e58bdf6b3164ee35f6de.jpg\'))')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_img_prop` (`prop_id`, `prop_img`) VALUES (:prop_id:, :prop_img:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Properti.php(198): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->updateProp('5')
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 16:33:40 --> ErrorException: Array to string conversion
+[Method: POST, Route: properti/update-properti/5]
+in APPPATH\Controllers\Properti.php on line 182.
+ 1 APPPATH\Controllers\Properti.php(182): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'F:\\PROJECT\\Proses\\properti2\\app\\Controllers\\Properti.php', 182)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->updateProp('5')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+INFO - 2024-11-11 16:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 16:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 16:36:15 --> ErrorException: Undefined array key "prop_img"
+[Method: POST, Route: properti/update-properti/11]
+in APPPATH\Controllers\Properti.php on line 191.
+ 1 APPPATH\Controllers\Properti.php(191): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prop_img"', 'F:\\PROJECT\\Proses\\properti2\\app\\Controllers\\Properti.php', 191)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->updateProp('11')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 16:36:25 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: properti/ubah-properti/11]
+in APPPATH\Views\admin\properti\ubah_prop.php on line 37.
+ 1 APPPATH\Views\admin\properti\ubah_prop.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php', 37)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/properti/ubah_prop', [], true)
+ 5 APPPATH\Controllers\Properti.php(150): view('admin/properti/ubah_prop', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->ubahProp('11')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+INFO - 2024-11-11 16:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 16:37:35 --> ErrorException: Undefined variable $ip
+[Method: GET, Route: properti/ubah-properti/10]
+in APPPATH\Views\admin\properti\ubah_prop.php on line 161.
+ 1 APPPATH\Views\admin\properti\ubah_prop.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ip', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php', 161)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/properti/ubah_prop', [], true)
+ 5 APPPATH\Controllers\Properti.php(150): view('admin/properti/ubah_prop', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->ubahProp('10')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+INFO - 2024-11-11 16:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 16:38:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 16:38:53 --> ErrorException: Undefined variable $ip
+[Method: GET, Route: properti/ubah-properti/1]
+in APPPATH\Views\admin\properti\ubah_prop.php on line 161.
+ 1 APPPATH\Views\admin\properti\ubah_prop.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ip', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php', 161)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/properti/ubah_prop', [], true)
+ 5 APPPATH\Controllers\Properti.php(150): view('admin/properti/ubah_prop', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->ubahProp('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+INFO - 2024-11-11 16:38:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 16:38:59 --> ErrorException: Undefined variable $ip
+[Method: GET, Route: properti/ubah-properti/4]
+in APPPATH\Views\admin\properti\ubah_prop.php on line 161.
+ 1 APPPATH\Views\admin\properti\ubah_prop.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ip', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php', 161)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/properti/ubah_prop', [], true)
+ 5 APPPATH\Controllers\Properti.php(150): view('admin/properti/ubah_prop', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->ubahProp('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+INFO - 2024-11-11 16:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 16:39:16 --> ErrorException: Undefined variable $ip
+[Method: GET, Route: properti/ubah-properti/6]
+in APPPATH\Views\admin\properti\ubah_prop.php on line 161.
+ 1 APPPATH\Views\admin\properti\ubah_prop.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ip', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php', 161)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/properti/ubah_prop', [], true)
+ 5 APPPATH\Controllers\Properti.php(150): view('admin/properti/ubah_prop', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->ubahProp('6')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+INFO - 2024-11-11 16:39:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 19:16:30 --> ErrorException: Undefined array key "prop_img"
+[Method: POST, Route: properti/update-properti/7]
+in APPPATH\Controllers\Properti.php on line 184.
+ 1 APPPATH\Controllers\Properti.php(184): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prop_img"', 'F:\\PROJECT\\Proses\\properti2\\app\\Controllers\\Properti.php', 184)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->updateProp('7')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 19:18:04 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: properti/ubah-properti/7]
+in APPPATH\Views\admin\properti\ubah_prop.php on line 37.
+ 1 APPPATH\Views\admin\properti\ubah_prop.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php', 37)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/properti/ubah_prop', [], true)
+ 5 APPPATH\Controllers\Properti.php(150): view('admin/properti/ubah_prop', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->ubahProp('7')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 19:18:07 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: properti/ubah-properti/7]
+in APPPATH\Views\admin\properti\ubah_prop.php on line 37.
+ 1 APPPATH\Views\admin\properti\ubah_prop.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php', 37)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/properti/ubah_prop', [], true)
+ 5 APPPATH\Controllers\Properti.php(150): view('admin/properti/ubah_prop', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->ubahProp('7')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+INFO - 2024-11-11 19:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:18:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:27:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:27:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-11 19:27:08 --> ErrorException: Undefined variable $ip
+[Method: GET, Route: properti/ubah-properti/1]
+in APPPATH\Views\admin\properti\ubah_prop.php on line 162.
+ 1 APPPATH\Views\admin\properti\ubah_prop.php(162): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ip', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php', 162)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\admin\\properti\\ubah_prop.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('admin/properti/ubah_prop', [], true)
+ 5 APPPATH\Controllers\Properti.php(150): view('admin/properti/ubah_prop', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->ubahProp('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+INFO - 2024-11-11 19:27:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:36:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 19:56:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:05:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:08:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:08:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:11:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:20:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:20:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:20:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:22:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:22:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:25:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:25:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:37:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:39:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:41:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:41:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:42:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 20:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:14:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:21:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:22:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-11 21:36:37 --> mysqli_sql_exception: Column 'prop_img' cannot be null in F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `da...', 0)
+#1 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 F:\PROJECT\Proses\properti2\app\Controllers\Properti.php(232): CodeIgniter\BaseModel->save(Array)
+#9 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Properti->updateProp('2')
+#10 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+#11 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 F:\PROJECT\Proses\properti2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('F:\\PROJECT\\Pros...')
+#16 {main}
+CRITICAL - 2024-11-11 21:36:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'prop_img' cannot be null
+[Method: POST, Route: properti/update-properti/2]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_img_prop` (`prop_id`, `prop_img`) VALUES (:prop_id:, :prop_img:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Properti.php(232): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->updateProp('2')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 21:36:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'prop_img' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_img_prop` (`prop_id`, `prop_img`) VALUES (\'2\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_img_prop` (`prop_id`, `prop_img`) VALUES (\'2\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_img_prop` (`prop_id`, `prop_img`) VALUES (:prop_id:, :prop_img:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Properti.php(232): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->updateProp('2')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 21:36:37 --> [Caused by] mysqli_sql_exception: Column 'prop_img' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `data_img_prop` (`prop_id`, `prop_img`) VALUES (\'2\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_img_prop` (`prop_id`, `prop_img`) VALUES (\'2\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_img_prop` (`prop_id`, `prop_img`) VALUES (\'2\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_img_prop` (`prop_id`, `prop_img`) VALUES (:prop_id:, :prop_img:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Properti.php(232): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->updateProp('2')
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 21:46:24 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: properti/update-properti/2]
+in APPPATH\Controllers\Properti.php on line 190.
+ 1 APPPATH\Controllers\Properti.php(190): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\PROJECT\\Proses\\properti2\\app\\Controllers\\Properti.php', 190)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->updateProp('2')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-11 21:49:51 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: properti/update-properti/2]
+in APPPATH\Controllers\Properti.php on line 187.
+ 1 APPPATH\Controllers\Properti.php(187): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\PROJECT\\Proses\\properti2\\app\\Controllers\\Properti.php', 187)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->updateProp('2')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+INFO - 2024-11-11 21:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:52:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-11 21:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

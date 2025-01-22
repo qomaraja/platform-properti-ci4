@@ -1,0 +1,318 @@
+CRITICAL - 2024-11-14 07:39:30 --> Error: Call to undefined method CodeIgniter\Pager\Pager::hasPreviousPage()
+[Method: GET, Route: properti/search]
+in APPPATH\Views\visit\properti\search.php on line 60.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/search', [], true)
+ 4 APPPATH\Controllers\Properti.php(122): view('visit/properti/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-14 07:40:49 --> Error: Call to undefined method CodeIgniter\Pager\Pager::hasPrevious()
+[Method: GET, Route: properti/search]
+in APPPATH\Views\visit\properti\search.php on line 60.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/search', [], true)
+ 4 APPPATH\Controllers\Properti.php(122): view('visit/properti/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-14 07:42:06 --> Error: Call to undefined method CodeIgniter\Pager\Pager::getPrevious()
+[Method: GET, Route: properti/search]
+in APPPATH\Views\visit\properti\search.php on line 60.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/search', [], true)
+ 4 APPPATH\Controllers\Properti.php(122): view('visit/properti/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-14 07:42:09 --> Error: Call to undefined method CodeIgniter\Pager\Pager::getPrevious()
+[Method: GET, Route: properti/search]
+in APPPATH\Views\visit\properti\search.php on line 60.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/search', [], true)
+ 4 APPPATH\Controllers\Properti.php(122): view('visit/properti/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-14 07:42:59 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: properti/search]
+in APPPATH\Views\visit\properti\search.php on line 59.
+ 1 APPPATH\Views\visit\properti\search.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\search.php', 59)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/search', [], true)
+ 5 APPPATH\Controllers\Properti.php(122): view('visit/properti/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-14 07:44:00 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: properti/search]
+in APPPATH\Views\visit\properti\search.php on line 59.
+ 1 APPPATH\Views\visit\properti\search.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\search.php', 59)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/search', [], true)
+ 5 APPPATH\Controllers\Properti.php(122): view('visit/properti/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-14 08:17:26 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: properti/search]
+in APPPATH\Views\visit\properti\search.php on line 70.
+ 1 APPPATH\Views\visit\properti\search.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\search.php', 70)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/search', [], true)
+ 5 APPPATH\Controllers\Properti.php(116): view('visit/properti/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-14 08:28:08 --> ErrorException: Undefined array key "tipe_nm"
+[Method: GET, Route: properti]
+in APPPATH\Views\visit\properti\properti.php on line 137.
+ 1 APPPATH\Views\visit\properti\properti.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tipe_nm"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php', 137)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/properti', [], true)
+ 5 APPPATH\Controllers\Properti.php(45): view('visit/properti/properti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-14 08:30:46 --> ErrorException: Undefined array key "prop_slug"
+[Method: GET, Route: properti]
+in APPPATH\Views\visit\properti\properti.php on line 134.
+ 1 APPPATH\Views\visit\properti\properti.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prop_slug"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php', 134)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/properti', [], true)
+ 5 APPPATH\Controllers\Properti.php(44): view('visit/properti/properti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-14 08:31:50 --> ErrorException: Undefined array key "prop_slug"
+[Method: GET, Route: properti]
+in APPPATH\Views\visit\properti\properti.php on line 134.
+ 1 APPPATH\Views\visit\properti\properti.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prop_slug"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php', 134)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/properti', [], true)
+ 5 APPPATH\Controllers\Properti.php(44): view('visit/properti/properti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-14 09:01:49 --> ErrorException: Undefined array key "prop_slug"
+[Method: GET, Route: properti]
+in APPPATH\Views\visit\properti\properti.php on line 134.
+ 1 APPPATH\Views\visit\properti\properti.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prop_slug"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php', 134)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/properti', [], true)
+ 5 APPPATH\Controllers\Properti.php(44): view('visit/properti/properti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-14 09:05:14 --> ErrorException: Undefined array key "tipe_nm"
+[Method: GET, Route: properti]
+in APPPATH\Views\visit\properti\properti.php on line 137.
+ 1 APPPATH\Views\visit\properti\properti.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tipe_nm"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php', 137)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/properti', [], true)
+ 5 APPPATH\Controllers\Properti.php(45): view('visit/properti/properti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-14 09:06:39 --> ErrorException: Undefined array key "tipe_nm"
+[Method: GET, Route: properti]
+in APPPATH\Views\visit\properti\properti.php on line 137.
+ 1 APPPATH\Views\visit\properti\properti.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tipe_nm"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php', 137)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/properti', [], true)
+ 5 APPPATH\Controllers\Properti.php(45): view('visit/properti/properti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-14 09:06:41 --> ErrorException: Undefined array key "tipe_nm"
+[Method: GET, Route: properti]
+in APPPATH\Views\visit\properti\properti.php on line 137.
+ 1 APPPATH\Views\visit\properti\properti.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tipe_nm"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php', 137)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/properti', [], true)
+ 5 APPPATH\Controllers\Properti.php(45): view('visit/properti/properti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-14 09:08:55 --> ErrorException: Undefined array key "prop_slug"
+[Method: GET, Route: properti]
+in APPPATH\Views\visit\properti\properti.php on line 134.
+ 1 APPPATH\Views\visit\properti\properti.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prop_slug"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php', 134)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/properti', [], true)
+ 5 APPPATH\Controllers\Properti.php(44): view('visit/properti/properti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-14 09:10:52 --> ErrorException: Undefined array key "prop_slug"
+[Method: GET, Route: properti]
+in APPPATH\Views\visit\properti\properti.php on line 134.
+ 1 APPPATH\Views\visit\properti\properti.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prop_slug"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php', 134)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/properti', [], true)
+ 5 APPPATH\Controllers\Properti.php(44): view('visit/properti/properti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-14 09:12:30 --> ErrorException: Undefined array key "prop_slug"
+[Method: GET, Route: properti]
+in APPPATH\Views\visit\properti\properti.php on line 134.
+ 1 APPPATH\Views\visit\properti\properti.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prop_slug"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php', 134)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/properti', [], true)
+ 5 APPPATH\Controllers\Properti.php(44): view('visit/properti/properti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-14 09:20:30 --> ErrorException: Undefined array key "prop_slug"
+[Method: GET, Route: properti/cluster-dahlia-tembalang]
+in APPPATH\Views\visit\properti\detail-properti.php on line 141.
+ 1 APPPATH\Views\visit\properti\detail-properti.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prop_slug"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\detail-properti.php', 141)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\detail-properti.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/detail-properti', [], true)
+ 5 APPPATH\Controllers\Properti.php(64): view('visit/properti/detail-properti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->detail('cluster-dahlia-tembalang')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-14 10:27:50 --> ErrorException: Undefined array key "prop_slug"
+[Method: GET, Route: properti/cluster-dahlia-tembalang]
+in APPPATH\Views\visit\properti\detail-properti.php on line 141.
+ 1 APPPATH\Views\visit\properti\detail-properti.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prop_slug"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\detail-properti.php', 141)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\detail-properti.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/detail-properti', [], true)
+ 5 APPPATH\Controllers\Properti.php(64): view('visit/properti/detail-properti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->detail('cluster-dahlia-tembalang')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-14 10:50:26 --> ErrorException: Undefined array key "prop_slug"
+[Method: GET, Route: properti]
+in APPPATH\Views\visit\properti\properti.php on line 134.
+ 1 APPPATH\Views\visit\properti\properti.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prop_slug"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php', 134)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/properti', [], true)
+ 5 APPPATH\Controllers\Properti.php(44): view('visit/properti/properti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-14 11:14:48 --> TypeError: App\Models\PropModel::getSearchPropWithTipe(): Argument #1 ($perPage) must be of type ?int, string given, called in F:\PROJECT\Proses\properti2\app\Controllers\Properti.php on line 75
+[Method: GET, Route: properti/search]
+in APPPATH\Models\PropModel.php on line 103.
+ 1 APPPATH\Controllers\Properti.php(75): App\Models\PropModel->getSearchPropWithTipe('', '1', '')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-14 11:15:41 --> TypeError: App\Models\PropModel::getSearchPropWithTipe(): Argument #1 ($perPage) must be of type ?int, string given, called in F:\PROJECT\Proses\properti2\app\Controllers\Properti.php on line 75
+[Method: GET, Route: properti/search]
+in APPPATH\Models\PropModel.php on line 103.
+ 1 APPPATH\Controllers\Properti.php(75): App\Models\PropModel->getSearchPropWithTipe('', '1', '')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')

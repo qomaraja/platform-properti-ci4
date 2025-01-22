@@ -1,0 +1,763 @@
+CRITICAL - 2024-11-15 07:52:47 --> ErrorException: Undefined variable $t
+[Method: GET, Route: properti]
+in APPPATH\Views\visit\properti\properti.php on line 68.
+ 1 APPPATH\Views\visit\properti\properti.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $t', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php', 68)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/properti', [], true)
+ 5 APPPATH\Controllers\Properti.php(46): view('visit/properti/properti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 07:52:55 --> ErrorException: Undefined variable $t
+[Method: GET, Route: properti]
+in APPPATH\Views\visit\properti\properti.php on line 68.
+ 1 APPPATH\Views\visit\properti\properti.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $t', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php', 68)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/properti', [], true)
+ 5 APPPATH\Controllers\Properti.php(46): view('visit/properti/properti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 07:52:57 --> ErrorException: Undefined variable $t
+[Method: GET, Route: properti]
+in APPPATH\Views\visit\properti\properti.php on line 68.
+ 1 APPPATH\Views\visit\properti\properti.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $t', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php', 68)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/properti', [], true)
+ 5 APPPATH\Controllers\Properti.php(46): view('visit/properti/properti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 07:52:58 --> ErrorException: Undefined variable $t
+[Method: GET, Route: properti]
+in APPPATH\Views\visit\properti\properti.php on line 68.
+ 1 APPPATH\Views\visit\properti\properti.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $t', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php', 68)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/properti', [], true)
+ 5 APPPATH\Controllers\Properti.php(46): view('visit/properti/properti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 07:52:59 --> ErrorException: Undefined variable $t
+[Method: GET, Route: properti]
+in APPPATH\Views\visit\properti\properti.php on line 68.
+ 1 APPPATH\Views\visit\properti\properti.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $t', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php', 68)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/properti', [], true)
+ 5 APPPATH\Controllers\Properti.php(46): view('visit/properti/properti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 08:28:53 --> TypeError: App\Models\PropModel::getAllProp(): Argument #4 ($minHarga) must be of type ?int, string given, called in F:\PROJECT\Proses\properti2\app\Controllers\Properti.php on line 33
+[Method: GET, Route: properti]
+in APPPATH\Models\PropModel.php on line 55.
+ 1 APPPATH\Controllers\Properti.php(33): App\Models\PropModel->getAllProp(12, 'terlama', 'semua', '', '', null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 08:29:12 --> TypeError: App\Models\PropModel::getAllProp(): Argument #4 ($minHarga) must be of type ?int, string given, called in F:\PROJECT\Proses\properti2\app\Controllers\Properti.php on line 33
+[Method: GET, Route: properti]
+in APPPATH\Models\PropModel.php on line 55.
+ 1 APPPATH\Controllers\Properti.php(33): App\Models\PropModel->getAllProp(12, 'terlama', 'Tanah', '', '', null, null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+ERROR - 2024-11-15 08:51:22 --> mysqli_sql_exception: Unknown column 'data_prop.luas_tanah' in 'where clause' in F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT COUNT(*)...', 0)
+#1 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+#6 F:\PROJECT\Proses\properti2\app\Models\PropModel.php(102): CodeIgniter\BaseModel->paginate(12, 'data_prop')
+#7 F:\PROJECT\Proses\properti2\app\Controllers\Properti.php(33): App\Models\PropModel->getAllProp(12, 'terbaru', 'semua', '', '', '', '90')
+#8 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Properti->index()
+#9 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+#10 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 F:\PROJECT\Proses\properti2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('F:\\PROJECT\\Pros...')
+#15 {main}
+CRITICAL - 2024-11-15 08:51:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'data_prop.luas_tanah' in 'where clause'
+[Method: GET, Route: properti]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `data_prop`
+JOIN `data_tipe` ON `data_tipe`.`tipe_id` = `data_prop`.`tipe_id`
+WHERE `data_prop`.`luas_tanah` <= :data_prop.luas_tanah:', [...], false)
+ 2 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\PropModel.php(102): CodeIgniter\BaseModel->paginate(12, 'data_prop')
+ 5 APPPATH\Controllers\Properti.php(33): App\Models\PropModel->getAllProp(12, 'terbaru', 'semua', '', '', '', '90')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 08:51:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'data_prop.luas_tanah' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `data_prop`
+JOIN `data_tipe` ON `data_tipe`.`tipe_id` = `data_prop`.`tipe_id`
+WHERE `data_prop`.`luas_tanah` <= \'90\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `data_prop`
+JOIN `data_tipe` ON `data_tipe`.`tipe_id` = `data_prop`.`tipe_id`
+WHERE `data_prop`.`luas_tanah` <= \'90\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `data_prop`
+JOIN `data_tipe` ON `data_tipe`.`tipe_id` = `data_prop`.`tipe_id`
+WHERE `data_prop`.`luas_tanah` <= :data_prop.luas_tanah:', [...], false)
+ 4 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\PropModel.php(102): CodeIgniter\BaseModel->paginate(12, 'data_prop')
+ 7 APPPATH\Controllers\Properti.php(33): App\Models\PropModel->getAllProp(12, 'terbaru', 'semua', '', '', '', '90')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 08:51:22 --> [Caused by] mysqli_sql_exception: Unknown column 'data_prop.luas_tanah' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `data_prop`
+JOIN `data_tipe` ON `data_tipe`.`tipe_id` = `data_prop`.`tipe_id`
+WHERE `data_prop`.`luas_tanah` <= \'90\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `data_prop`
+JOIN `data_tipe` ON `data_tipe`.`tipe_id` = `data_prop`.`tipe_id`
+WHERE `data_prop`.`luas_tanah` <= \'90\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `data_prop`
+JOIN `data_tipe` ON `data_tipe`.`tipe_id` = `data_prop`.`tipe_id`
+WHERE `data_prop`.`luas_tanah` <= \'90\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `data_prop`
+JOIN `data_tipe` ON `data_tipe`.`tipe_id` = `data_prop`.`tipe_id`
+WHERE `data_prop`.`luas_tanah` <= :data_prop.luas_tanah:', [...], false)
+ 5 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\PropModel.php(102): CodeIgniter\BaseModel->paginate(12, 'data_prop')
+ 8 APPPATH\Controllers\Properti.php(33): App\Models\PropModel->getAllProp(12, 'terbaru', 'semua', '', '', '', '90')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 10:19:39 --> ErrorException: Undefined variable $selectedOrder
+[Method: GET, Route: properti/search]
+in APPPATH\Views\visit\properti\properti.php on line 36.
+ 1 APPPATH\Views\visit\properti\properti.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedOrder', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php', 36)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/properti', [], true)
+ 5 APPPATH\Controllers\Properti.php(147): view('visit/properti/properti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+ERROR - 2024-11-15 10:23:17 --> mysqli_sql_exception: Unknown column 'data_prop' in 'where clause' in F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 F:\PROJECT\Proses\properti2\app\Models\PropModel.php(109): CodeIgniter\BaseModel->findAll()
+#7 F:\PROJECT\Proses\properti2\app\Controllers\Properti.php(71): App\Models\PropModel->searchProp('wahid')
+#8 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Properti->searchProp()
+#9 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+#10 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 F:\PROJECT\Proses\properti2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('F:\\PROJECT\\Pros...')
+#15 {main}
+CRITICAL - 2024-11-15 10:23:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'data_prop' in 'where clause'
+[Method: GET, Route: properti/search-properti]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_prop`
+WHERE `data_prop` LIKE :data_prop: ESCAPE \'!\'', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\PropModel.php(109): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Properti.php(71): App\Models\PropModel->searchProp('wahid')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->searchProp()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 10:23:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'data_prop' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_prop`
+WHERE `data_prop` LIKE \'%wahid%\' ESCAPE \'!\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_prop`
+WHERE `data_prop` LIKE \'%wahid%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_prop`
+WHERE `data_prop` LIKE :data_prop: ESCAPE \'!\'', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\PropModel.php(109): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Properti.php(71): App\Models\PropModel->searchProp('wahid')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->searchProp()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 10:23:17 --> [Caused by] mysqli_sql_exception: Unknown column 'data_prop' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `data_prop`
+WHERE `data_prop` LIKE \'%wahid%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_prop`
+WHERE `data_prop` LIKE \'%wahid%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_prop`
+WHERE `data_prop` LIKE \'%wahid%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_prop`
+WHERE `data_prop` LIKE :data_prop: ESCAPE \'!\'', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\PropModel.php(109): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Properti.php(71): App\Models\PropModel->searchProp('wahid')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->searchProp()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 10:24:58 --> ErrorException: Undefined variable $breadcrumbs
+[Method: GET, Route: properti/search-properti]
+in APPPATH\Views\visit\layout\breadcrumb.php on line 6.
+ 1 APPPATH\Views\visit\layout\breadcrumb.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $breadcrumbs', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\layout\\breadcrumb.php', 6)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\layout\\breadcrumb.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('visit/layout/breadcrumb', null, true)
+ 5 APPPATH\Views\visit\properti\properti.php(6): CodeIgniter\View\View->include('visit/layout/breadcrumb')
+ 6 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/properti', [], true)
+ 9 APPPATH\Controllers\Properti.php(74): view('visit/properti/properti', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->searchProp()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 10:27:41 --> ErrorException: Undefined array key "data_prop"
+[Method: GET, Route: properti/search-properti]
+in APPPATH\Views\visit\properti\properti.php on line 160.
+ 1 APPPATH\Views\visit\properti\properti.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "data_prop"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php', 160)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/properti', [], true)
+ 5 APPPATH\Controllers\Properti.php(111): view('visit/properti/properti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->searchProp()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 10:31:18 --> ErrorException: Undefined array key "tipe_nm"
+[Method: GET, Route: properti]
+in APPPATH\Views\visit\properti\properti.php on line 165.
+ 1 APPPATH\Views\visit\properti\properti.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tipe_nm"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php', 165)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\properti.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/properti', [], true)
+ 5 APPPATH\Controllers\Properti.php(69): view('visit/properti/properti', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+ERROR - 2024-11-15 10:32:35 --> mysqli_sql_exception: Unknown table 'properti.properti' in F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `propert...', 0)
+#1 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `propert...')
+#2 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `propert...')
+#3 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `propert...', Array, false)
+#4 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 F:\PROJECT\Proses\properti2\app\Models\PropModel.php(123): CodeIgniter\BaseModel->findAll()
+#7 F:\PROJECT\Proses\properti2\app\Controllers\Properti.php(35): App\Models\PropModel->searchProp('wahid')
+#8 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Properti->index()
+#9 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+#10 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 F:\PROJECT\Proses\properti2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('F:\\PROJECT\\Pros...')
+#15 {main}
+CRITICAL - 2024-11-15 10:32:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'properti.properti'
+[Method: GET, Route: properti]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `properti`.*, `data_tipe`.`tipe_nm`
+FROM `data_prop`
+JOIN `data_tipe` ON `data_tipe`.`tipe_id` = `properti`.`tipe_id`
+WHERE `prop_nm` LIKE :prop_nm: ESCAPE \'!\'
+OR  `prop_lb` LIKE :prop_lb: ESCAPE \'!\'
+OR  `prop_lt` LIKE :prop_lt: ESCAPE \'!\'
+OR  `prop_kt` LIKE :prop_kt: ESCAPE \'!\'
+OR  `prop_km` LIKE :prop_km: ESCAPE \'!\'
+OR  `prop_almt` LIKE :prop_almt: ESCAPE \'!\'
+OR  `prop_kd_almt` LIKE :prop_kd_almt: ESCAPE \'!\'
+OR  `prop_isi` LIKE :prop_isi: ESCAPE \'!\'
+OR  `prop_hrg` LIKE :prop_hrg: ESCAPE \'!\'
+OR  `prop_kpr` LIKE :prop_kpr: ESCAPE \'!\'
+OR  `prop_bunga` LIKE :prop_bunga: ESCAPE \'!\'
+OR  `prop_info_kpr` LIKE :prop_info_kpr: ESCAPE \'!\'', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\PropModel.php(123): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Properti.php(35): App\Models\PropModel->searchProp('wahid')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 10:32:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'properti.properti'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `properti`.*, `data_tipe`.`tipe_nm`
+FROM `data_prop`
+JOIN `data_tipe` ON `data_tipe`.`tipe_id` = `properti`.`tipe_id`
+WHERE `prop_nm` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_lb` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_lt` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_kt` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_km` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_almt` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_kd_almt` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_isi` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_hrg` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_kpr` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_bunga` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_info_kpr` LIKE \'%wahid%\' ESCAPE \'!\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `properti`.*, `data_tipe`.`tipe_nm`
+FROM `data_prop`
+JOIN `data_tipe` ON `data_tipe`.`tipe_id` = `properti`.`tipe_id`
+WHERE `prop_nm` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_lb` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_lt` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_kt` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_km` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_almt` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_kd_almt` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_isi` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_hrg` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_kpr` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_bunga` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_info_kpr` LIKE \'%wahid%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `properti`.*, `data_tipe`.`tipe_nm`
+FROM `data_prop`
+JOIN `data_tipe` ON `data_tipe`.`tipe_id` = `properti`.`tipe_id`
+WHERE `prop_nm` LIKE :prop_nm: ESCAPE \'!\'
+OR  `prop_lb` LIKE :prop_lb: ESCAPE \'!\'
+OR  `prop_lt` LIKE :prop_lt: ESCAPE \'!\'
+OR  `prop_kt` LIKE :prop_kt: ESCAPE \'!\'
+OR  `prop_km` LIKE :prop_km: ESCAPE \'!\'
+OR  `prop_almt` LIKE :prop_almt: ESCAPE \'!\'
+OR  `prop_kd_almt` LIKE :prop_kd_almt: ESCAPE \'!\'
+OR  `prop_isi` LIKE :prop_isi: ESCAPE \'!\'
+OR  `prop_hrg` LIKE :prop_hrg: ESCAPE \'!\'
+OR  `prop_kpr` LIKE :prop_kpr: ESCAPE \'!\'
+OR  `prop_bunga` LIKE :prop_bunga: ESCAPE \'!\'
+OR  `prop_info_kpr` LIKE :prop_info_kpr: ESCAPE \'!\'', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\PropModel.php(123): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Properti.php(35): App\Models\PropModel->searchProp('wahid')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 10:32:35 --> [Caused by] mysqli_sql_exception: Unknown table 'properti.properti'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `properti`.*, `data_tipe`.`tipe_nm`
+FROM `data_prop`
+JOIN `data_tipe` ON `data_tipe`.`tipe_id` = `properti`.`tipe_id`
+WHERE `prop_nm` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_lb` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_lt` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_kt` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_km` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_almt` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_kd_almt` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_isi` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_hrg` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_kpr` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_bunga` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_info_kpr` LIKE \'%wahid%\' ESCAPE \'!\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `properti`.*, `data_tipe`.`tipe_nm`
+FROM `data_prop`
+JOIN `data_tipe` ON `data_tipe`.`tipe_id` = `properti`.`tipe_id`
+WHERE `prop_nm` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_lb` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_lt` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_kt` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_km` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_almt` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_kd_almt` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_isi` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_hrg` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_kpr` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_bunga` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_info_kpr` LIKE \'%wahid%\' ESCAPE \'!\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `properti`.*, `data_tipe`.`tipe_nm`
+FROM `data_prop`
+JOIN `data_tipe` ON `data_tipe`.`tipe_id` = `properti`.`tipe_id`
+WHERE `prop_nm` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_lb` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_lt` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_kt` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_km` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_almt` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_kd_almt` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_isi` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_hrg` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_kpr` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_bunga` LIKE \'%wahid%\' ESCAPE \'!\'
+OR  `prop_info_kpr` LIKE \'%wahid%\' ESCAPE \'!\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `properti`.*, `data_tipe`.`tipe_nm`
+FROM `data_prop`
+JOIN `data_tipe` ON `data_tipe`.`tipe_id` = `properti`.`tipe_id`
+WHERE `prop_nm` LIKE :prop_nm: ESCAPE \'!\'
+OR  `prop_lb` LIKE :prop_lb: ESCAPE \'!\'
+OR  `prop_lt` LIKE :prop_lt: ESCAPE \'!\'
+OR  `prop_kt` LIKE :prop_kt: ESCAPE \'!\'
+OR  `prop_km` LIKE :prop_km: ESCAPE \'!\'
+OR  `prop_almt` LIKE :prop_almt: ESCAPE \'!\'
+OR  `prop_kd_almt` LIKE :prop_kd_almt: ESCAPE \'!\'
+OR  `prop_isi` LIKE :prop_isi: ESCAPE \'!\'
+OR  `prop_hrg` LIKE :prop_hrg: ESCAPE \'!\'
+OR  `prop_kpr` LIKE :prop_kpr: ESCAPE \'!\'
+OR  `prop_bunga` LIKE :prop_bunga: ESCAPE \'!\'
+OR  `prop_info_kpr` LIKE :prop_info_kpr: ESCAPE \'!\'', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\PropModel.php(123): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Properti.php(35): App\Models\PropModel->searchProp('wahid')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 10:32:47 --> Error: Call to a member function links() on null
+[Method: GET, Route: properti]
+in APPPATH\Views\visit\properti\properti.php on line 181.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/properti', [], true)
+ 4 APPPATH\Controllers\Properti.php(69): view('visit/properti/properti', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 11:38:51 --> ErrorException: Undefined variable $title
+[Method: GET, Route: properti/dijual-cepat-rumah-etnik-di-graha-wahid-semarang]
+in APPPATH\Views\visit\layout\template.php on line 7.
+ 1 APPPATH\Views\visit\layout\template.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\layout\\template.php', 7)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('visit/layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/detail-properti', [], true)
+ 6 APPPATH\Controllers\Properti.php(86): view('visit/properti/detail-properti', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->detail('dijual-cepat-rumah-etnik-di-graha-wahid-semarang')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 11:40:30 --> ErrorException: Undefined variable $mtUrl
+[Method: GET, Route: properti/dijual-cepat-rumah-etnik-di-graha-wahid-semarang]
+in APPPATH\Views\visit\layout\template.php on line 11.
+ 1 APPPATH\Views\visit\layout\template.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $mtUrl', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\layout\\template.php', 11)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\layout\\template.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(250): CodeIgniter\View\View->render('visit/layout/template', [], true)
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/detail-properti', [], true)
+ 6 APPPATH\Controllers\Properti.php(92): view('visit/properti/detail-properti', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->detail('dijual-cepat-rumah-etnik-di-graha-wahid-semarang')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 12:24:09 --> ErrorException: Undefined array key "prop_img"
+[Method: GET, Route: properti]
+in APPPATH\Controllers\Properti.php on line 68.
+ 1 APPPATH\Controllers\Properti.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prop_img"', 'F:\\PROJECT\\Proses\\properti2\\app\\Controllers\\Properti.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 12:24:23 --> ErrorException: Undefined array key "prop_img1"
+[Method: GET, Route: properti]
+in APPPATH\Controllers\Properti.php on line 68.
+ 1 APPPATH\Controllers\Properti.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prop_img1"', 'F:\\PROJECT\\Proses\\properti2\\app\\Controllers\\Properti.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 12:33:33 --> ErrorException: Undefined array key "prop_nm"
+[Method: GET, Route: properti/search]
+in APPPATH\Controllers\Properti.php on line 147.
+ 1 APPPATH\Controllers\Properti.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prop_nm"', 'F:\\PROJECT\\Proses\\properti2\\app\\Controllers\\Properti.php', 147)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 13:56:16 --> ErrorException: Undefined variable $selectedOrder
+[Method: GET, Route: artikel]
+in APPPATH\Views\visit\artikel\artikel.php on line 36.
+ 1 APPPATH\Views\visit\artikel\artikel.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedOrder', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\artikel\\artikel.php', 36)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\artikel\\artikel.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/artikel/artikel', [], true)
+ 5 APPPATH\Controllers\Artikel.php(41): view('visit/artikel/artikel', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 14:13:43 --> BadMethodCallException: Call to undefined method App\Models\ArtModel::getAllProp
+[Method: GET, Route: artikel]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Artikel.php(34): CodeIgniter\Model->__call('getAllProp', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 14:14:47 --> BadMethodCallException: Call to undefined method App\Models\ArtModel::getAllArt
+[Method: GET, Route: artikel]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Artikel.php(34): CodeIgniter\Model->__call('getAllArt', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 14:29:09 --> ErrorException: Undefined variable $selectedTipe
+[Method: GET, Route: artikel]
+in APPPATH\Views\visit\artikel\artikel.php on line 69.
+ 1 APPPATH\Views\visit\artikel\artikel.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedTipe', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\artikel\\artikel.php', 69)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\artikel\\artikel.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/artikel/artikel', [], true)
+ 5 APPPATH\Controllers\Artikel.php(65): view('visit/artikel/artikel', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 14:41:06 --> ErrorException: Undefined array key "formatted_date"
+[Method: GET, Route: artikel]
+in APPPATH\Views\visit\artikel\artikel.php on line 148.
+ 1 APPPATH\Views\visit\artikel\artikel.php(148): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "formatted_date"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\artikel\\artikel.php', 148)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\artikel\\artikel.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/artikel/artikel', [], true)
+ 5 APPPATH\Controllers\Artikel.php(65): view('visit/artikel/artikel', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+ERROR - 2024-11-15 15:11:07 --> mysqli_sql_exception: Unknown column 'data_art.art_updated_at' in 'where clause' in F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT COUNT(*)...', 0)
+#1 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+#6 F:\PROJECT\Proses\properti2\app\Models\ArtModel.php(74): CodeIgniter\BaseModel->paginate(12, 'data_art')
+#7 F:\PROJECT\Proses\properti2\app\Controllers\Artikel.php(34): App\Models\ArtModel->getAllArt(12, 'terbaru', '9', '19-11-2024', '29-11-2024', NULL)
+#8 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Artikel->index()
+#9 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+#10 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 F:\PROJECT\Proses\properti2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('F:\\PROJECT\\Pros...')
+#15 {main}
+CRITICAL - 2024-11-15 15:11:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'data_art.art_updated_at' in 'where clause'
+[Method: GET, Route: artikel]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `data_art`
+JOIN `data_kat` ON `data_kat`.`kat_id` = `data_art`.`kat_id`
+WHERE `data_art`.`kat_id` = :data_art.kat_id:
+AND `data_art`.`art_updated_at` >= :data_art.art_updated_at:
+AND `data_art`.`art_updated_at` <= :data_art.art_updated_at.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\ArtModel.php(74): CodeIgniter\BaseModel->paginate(12, 'data_art')
+ 5 APPPATH\Controllers\Artikel.php(34): App\Models\ArtModel->getAllArt(12, 'terbaru', '9', '19-11-2024', '29-11-2024', null)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 15:11:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'data_art.art_updated_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `data_art`
+JOIN `data_kat` ON `data_kat`.`kat_id` = `data_art`.`kat_id`
+WHERE `data_art`.`kat_id` = \'9\'
+AND `data_art`.`art_updated_at` >= \'19-11-2024\'
+AND `data_art`.`art_updated_at` <= \'29-11-2024\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `data_art`
+JOIN `data_kat` ON `data_kat`.`kat_id` = `data_art`.`kat_id`
+WHERE `data_art`.`kat_id` = \'9\'
+AND `data_art`.`art_updated_at` >= \'19-11-2024\'
+AND `data_art`.`art_updated_at` <= \'29-11-2024\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `data_art`
+JOIN `data_kat` ON `data_kat`.`kat_id` = `data_art`.`kat_id`
+WHERE `data_art`.`kat_id` = :data_art.kat_id:
+AND `data_art`.`art_updated_at` >= :data_art.art_updated_at:
+AND `data_art`.`art_updated_at` <= :data_art.art_updated_at.1:', [...], false)
+ 4 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\ArtModel.php(74): CodeIgniter\BaseModel->paginate(12, 'data_art')
+ 7 APPPATH\Controllers\Artikel.php(34): App\Models\ArtModel->getAllArt(12, 'terbaru', '9', '19-11-2024', '29-11-2024', null)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-15 15:11:07 --> [Caused by] mysqli_sql_exception: Unknown column 'data_art.art_updated_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `data_art`
+JOIN `data_kat` ON `data_kat`.`kat_id` = `data_art`.`kat_id`
+WHERE `data_art`.`kat_id` = \'9\'
+AND `data_art`.`art_updated_at` >= \'19-11-2024\'
+AND `data_art`.`art_updated_at` <= \'29-11-2024\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `data_art`
+JOIN `data_kat` ON `data_kat`.`kat_id` = `data_art`.`kat_id`
+WHERE `data_art`.`kat_id` = \'9\'
+AND `data_art`.`art_updated_at` >= \'19-11-2024\'
+AND `data_art`.`art_updated_at` <= \'29-11-2024\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `data_art`
+JOIN `data_kat` ON `data_kat`.`kat_id` = `data_art`.`kat_id`
+WHERE `data_art`.`kat_id` = \'9\'
+AND `data_art`.`art_updated_at` >= \'19-11-2024\'
+AND `data_art`.`art_updated_at` <= \'29-11-2024\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1728): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `data_art`
+JOIN `data_kat` ON `data_kat`.`kat_id` = `data_art`.`kat_id`
+WHERE `data_art`.`kat_id` = :data_art.kat_id:
+AND `data_art`.`art_updated_at` >= :data_art.art_updated_at:
+AND `data_art`.`art_updated_at` <= :data_art.art_updated_at.1:', [...], false)
+ 5 SYSTEMPATH\Model.php(678): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1284): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\ArtModel.php(74): CodeIgniter\BaseModel->paginate(12, 'data_art')
+ 8 APPPATH\Controllers\Artikel.php(34): App\Models\ArtModel->getAllArt(12, 'terbaru', '9', '19-11-2024', '29-11-2024', null)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')

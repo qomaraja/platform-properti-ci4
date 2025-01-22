@@ -1,0 +1,702 @@
+ERROR - 2024-11-13 06:38:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 5 in F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 F:\PROJECT\Proses\properti2\app\Models\PropModel.php(78): CodeIgniter\BaseModel->findAll()
+#7 F:\PROJECT\Proses\properti2\app\Controllers\Search.php(49): App\Models\PropModel->getSearchPropWithTipe('tembalang', NULL, NULL)
+#8 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Search->search()
+#9 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#10 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 F:\PROJECT\Proses\properti2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('F:\\PROJECT\\Pros...')
+#15 {main}
+CRITICAL - 2024-11-13 06:38:31 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 5
+[Method: POST, Route: search]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = :prop_almt:
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\PropModel.php(78): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Search.php(49): App\Models\PropModel->getSearchPropWithTipe('tembalang', null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->search()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 06:38:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = \'tembalang\'
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = \'tembalang\'
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = :prop_almt:
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\PropModel.php(78): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Search.php(49): App\Models\PropModel->getSearchPropWithTipe('tembalang', null, null)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->search()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 06:38:31 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = \'tembalang\'
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = \'tembalang\'
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = \'tembalang\'
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = :prop_almt:
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\PropModel.php(78): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Search.php(49): App\Models\PropModel->getSearchPropWithTipe('tembalang', null, null)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->search()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+ERROR - 2024-11-13 06:43:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 5 in F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 F:\PROJECT\Proses\properti2\app\Models\PropModel.php(78): CodeIgniter\BaseModel->findAll()
+#7 F:\PROJECT\Proses\properti2\app\Controllers\Search.php(49): App\Models\PropModel->getSearchPropWithTipe('tembalang', NULL, NULL)
+#8 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Search->search()
+#9 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#10 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 F:\PROJECT\Proses\properti2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('F:\\PROJECT\\Pros...')
+#15 {main}
+CRITICAL - 2024-11-13 06:43:21 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 5
+[Method: POST, Route: search/search]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = :prop_almt:
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\PropModel.php(78): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Search.php(49): App\Models\PropModel->getSearchPropWithTipe('tembalang', null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->search()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 06:43:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = \'tembalang\'
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = \'tembalang\'
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = :prop_almt:
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\PropModel.php(78): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Search.php(49): App\Models\PropModel->getSearchPropWithTipe('tembalang', null, null)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->search()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 06:43:21 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = \'tembalang\'
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = \'tembalang\'
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = \'tembalang\'
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = :prop_almt:
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\PropModel.php(78): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Search.php(49): App\Models\PropModel->getSearchPropWithTipe('tembalang', null, null)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->search()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+ERROR - 2024-11-13 06:44:16 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 5 in F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 F:\PROJECT\Proses\properti2\app\Models\PropModel.php(78): CodeIgniter\BaseModel->findAll()
+#7 F:\PROJECT\Proses\properti2\app\Controllers\Search.php(49): App\Models\PropModel->getSearchPropWithTipe('', NULL, NULL)
+#8 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Search->search()
+#9 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+#10 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 F:\PROJECT\Proses\properti2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('F:\\PROJECT\\Pros...')
+#15 {main}
+CRITICAL - 2024-11-13 06:44:16 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 5
+[Method: POST, Route: search]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = :prop_almt:
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\PropModel.php(78): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Search.php(49): App\Models\PropModel->getSearchPropWithTipe('', null, null)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->search()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 06:44:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = \'\'
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = \'\'
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = :prop_almt:
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\PropModel.php(78): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Search.php(49): App\Models\PropModel->getSearchPropWithTipe('', null, null)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->search()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 06:44:16 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = \'\'
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = \'\'
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = \'\'
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_prop`
+WHERE `prop_almt` = :prop_almt:
+AND `tipe_id` IS NULL
+AND `prop_hrg` < IS NULL', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\PropModel.php(78): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Search.php(49): App\Models\PropModel->getSearchPropWithTipe('', null, null)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Search->search()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Search))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 06:58:47 --> BadMethodCallException: Call to undefined method App\Models\PropModel::searchProperties
+[Method: POST, Route: search]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Properti.php(67): CodeIgniter\Model->__call('searchProperties', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+ERROR - 2024-11-13 06:59:20 --> mysqli_sql_exception: Table 'properti.tipe' doesn't exist in F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `propert...', 0)
+#1 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `propert...')
+#2 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `propert...')
+#3 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `propert...', Array, false)
+#4 F:\PROJECT\Proses\properti2\app\Models\PropModel.php(93): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\PROJECT\Proses\properti2\app\Controllers\Properti.php(67): App\Models\PropModel->getSearchPropWithTipe('tembalang', '2', '')
+#6 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Properti->search()
+#7 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+#8 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\PROJECT\Proses\properti2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('F:\\PROJECT\\Pros...')
+#13 {main}
+CRITICAL - 2024-11-13 06:59:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'properti.tipe' doesn't exist
+[Method: POST, Route: search]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `properti`.*, `tipe`.`tipe_nm`
+FROM `data_prop`
+JOIN `tipe` ON `properti`.`tipe_id` = `tipe`.`tipe_id`
+WHERE `properti`.`prop_almt` LIKE :properti.prop_almt: ESCAPE \'!\'
+AND `properti`.`tipe_id` = :properti.tipe_id:', [...], false)
+ 2 APPPATH\Models\PropModel.php(93): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Properti.php(67): App\Models\PropModel->getSearchPropWithTipe('tembalang', '2', '')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 06:59:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'properti.tipe' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `properti`.*, `tipe`.`tipe_nm`
+FROM `data_prop`
+JOIN `tipe` ON `properti`.`tipe_id` = `tipe`.`tipe_id`
+WHERE `properti`.`prop_almt` LIKE \'%tembalang%\' ESCAPE \'!\'
+AND `properti`.`tipe_id` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `properti`.*, `tipe`.`tipe_nm`
+FROM `data_prop`
+JOIN `tipe` ON `properti`.`tipe_id` = `tipe`.`tipe_id`
+WHERE `properti`.`prop_almt` LIKE \'%tembalang%\' ESCAPE \'!\'
+AND `properti`.`tipe_id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `properti`.*, `tipe`.`tipe_nm`
+FROM `data_prop`
+JOIN `tipe` ON `properti`.`tipe_id` = `tipe`.`tipe_id`
+WHERE `properti`.`prop_almt` LIKE :properti.prop_almt: ESCAPE \'!\'
+AND `properti`.`tipe_id` = :properti.tipe_id:', [...], false)
+ 4 APPPATH\Models\PropModel.php(93): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Properti.php(67): App\Models\PropModel->getSearchPropWithTipe('tembalang', '2', '')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 06:59:20 --> [Caused by] mysqli_sql_exception: Table 'properti.tipe' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `properti`.*, `tipe`.`tipe_nm`
+FROM `data_prop`
+JOIN `tipe` ON `properti`.`tipe_id` = `tipe`.`tipe_id`
+WHERE `properti`.`prop_almt` LIKE \'%tembalang%\' ESCAPE \'!\'
+AND `properti`.`tipe_id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `properti`.*, `tipe`.`tipe_nm`
+FROM `data_prop`
+JOIN `tipe` ON `properti`.`tipe_id` = `tipe`.`tipe_id`
+WHERE `properti`.`prop_almt` LIKE \'%tembalang%\' ESCAPE \'!\'
+AND `properti`.`tipe_id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `properti`.*, `tipe`.`tipe_nm`
+FROM `data_prop`
+JOIN `tipe` ON `properti`.`tipe_id` = `tipe`.`tipe_id`
+WHERE `properti`.`prop_almt` LIKE \'%tembalang%\' ESCAPE \'!\'
+AND `properti`.`tipe_id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `properti`.*, `tipe`.`tipe_nm`
+FROM `data_prop`
+JOIN `tipe` ON `properti`.`tipe_id` = `tipe`.`tipe_id`
+WHERE `properti`.`prop_almt` LIKE :properti.prop_almt: ESCAPE \'!\'
+AND `properti`.`tipe_id` = :properti.tipe_id:', [...], false)
+ 5 APPPATH\Models\PropModel.php(93): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Properti.php(67): App\Models\PropModel->getSearchPropWithTipe('tembalang', '2', '')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 07:00:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "properti/search.php"
+[Method: POST, Route: search]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('properti/search.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('properti/search', [], true)
+ 3 APPPATH\Controllers\Properti.php(70): view('properti/search', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 07:00:55 --> ErrorException: Undefined variable $breadcrumbs
+[Method: POST, Route: search]
+in APPPATH\Views\visit\layout\breadcrumb.php on line 6.
+ 1 APPPATH\Views\visit\layout\breadcrumb.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $breadcrumbs', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\layout\\breadcrumb.php', 6)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\layout\\breadcrumb.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('visit/layout/breadcrumb', null, true)
+ 5 APPPATH\Views\visit\properti\search.php(6): CodeIgniter\View\View->include('visit/layout/breadcrumb')
+ 6 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\search.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/search', [], true)
+ 9 APPPATH\Controllers\Properti.php(70): view('visit/properti/search', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 07:03:03 --> ErrorException: Undefined variable $allTipe
+[Method: POST, Route: search]
+in APPPATH\Views\visit\properti\search.php on line 55.
+ 1 APPPATH\Views\visit\properti\search.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $allTipe', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\search.php', 55)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/search', [], true)
+ 5 APPPATH\Controllers\Properti.php(83): view('visit/properti/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 17:48:16 --> ErrorException: Undefined array key "tipe_nm"
+[Method: POST, Route: search]
+in APPPATH\Views\visit\properti\search.php on line 131.
+ 1 APPPATH\Views\visit\properti\search.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tipe_nm"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\search.php', 131)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/search', [], true)
+ 5 APPPATH\Controllers\Properti.php(87): view('visit/properti/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+ERROR - 2024-11-13 17:53:21 --> mysqli_sql_exception: Table 'properti.tipe' doesn't exist in F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `tipe_nm...', 0)
+#1 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tipe_nm...')
+#2 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tipe_nm...')
+#3 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `tipe_nm...', Array, false)
+#4 F:\PROJECT\Proses\properti2\app\Models\PropModel.php(101): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\PROJECT\Proses\properti2\app\Controllers\Properti.php(82): App\Models\PropModel->getTipeNameById('1')
+#6 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Properti->search()
+#7 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+#8 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 F:\PROJECT\Proses\properti2\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 F:\PROJECT\Proses\properti2\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('F:\\PROJECT\\Pros...')
+#13 {main}
+CRITICAL - 2024-11-13 17:53:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'properti.tipe' doesn't exist
+[Method: POST, Route: search]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `tipe_nm`
+FROM `tipe`
+WHERE `tipe_id` = :tipe_id:', [...], false)
+ 2 APPPATH\Models\PropModel.php(101): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Properti.php(82): App\Models\PropModel->getTipeNameById('1')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 17:53:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'properti.tipe' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tipe_nm`
+FROM `tipe`
+WHERE `tipe_id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tipe_nm`
+FROM `tipe`
+WHERE `tipe_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `tipe_nm`
+FROM `tipe`
+WHERE `tipe_id` = :tipe_id:', [...], false)
+ 4 APPPATH\Models\PropModel.php(101): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Properti.php(82): App\Models\PropModel->getTipeNameById('1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 17:53:21 --> [Caused by] mysqli_sql_exception: Table 'properti.tipe' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `tipe_nm`
+FROM `tipe`
+WHERE `tipe_id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tipe_nm`
+FROM `tipe`
+WHERE `tipe_id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tipe_nm`
+FROM `tipe`
+WHERE `tipe_id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `tipe_nm`
+FROM `tipe`
+WHERE `tipe_id` = :tipe_id:', [...], false)
+ 5 APPPATH\Models\PropModel.php(101): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Properti.php(82): App\Models\PropModel->getTipeNameById('1')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 19:38:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "visit/properti.php"
+[Method: POST, Route: search]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('visit/properti.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti', [], true)
+ 3 APPPATH\Controllers\Properti.php(117): view('visit/properti', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 19:57:01 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: properti/search]
+in APPPATH\Controllers\Properti.php on line 59.
+ 1 APPPATH\Controllers\Properti.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\PROJECT\\Proses\\properti2\\app\\Controllers\\Properti.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->detail('search')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 19:58:04 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: properti/search]
+in APPPATH\Controllers\Properti.php on line 59.
+ 1 APPPATH\Controllers\Properti.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\PROJECT\\Proses\\properti2\\app\\Controllers\\Properti.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->detail('search')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 20:16:45 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: properti/search]
+in APPPATH\Controllers\Properti.php on line 59.
+ 1 APPPATH\Controllers\Properti.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\PROJECT\\Proses\\properti2\\app\\Controllers\\Properti.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->detail('search')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 20:19:22 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: properti/search]
+in APPPATH\Controllers\Properti.php on line 59.
+ 1 APPPATH\Controllers\Properti.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\PROJECT\\Proses\\properti2\\app\\Controllers\\Properti.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->detail('search')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 20:23:51 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: properti/search]
+in APPPATH\Controllers\Properti.php on line 59.
+ 1 APPPATH\Controllers\Properti.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'F:\\PROJECT\\Proses\\properti2\\app\\Controllers\\Properti.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->detail('search')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+INFO - 2024-11-13 20:31:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 20:32:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-13 20:40:27 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: properti/search]
+in APPPATH\Views\visit\properti\search.php on line 58.
+ 1 APPPATH\Views\visit\properti\search.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\search.php', 58)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/search', [], true)
+ 5 APPPATH\Controllers\Properti.php(115): view('visit/properti/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 20:40:52 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: properti/search]
+in APPPATH\Views\visit\properti\search.php on line 58.
+ 1 APPPATH\Views\visit\properti\search.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\search.php', 58)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/search', [], true)
+ 5 APPPATH\Controllers\Properti.php(115): view('visit/properti/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 20:50:37 --> Error: Call to undefined method CodeIgniter\Pager\Pager::hasPreviousPage()
+[Method: GET, Route: properti/search]
+in APPPATH\Views\visit\properti\search.php on line 58.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/search', [], true)
+ 4 APPPATH\Controllers\Properti.php(115): view('visit/properti/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 20:51:19 --> Error: Call to undefined method CodeIgniter\Pager\Pager::hasPreviousPage()
+[Method: GET, Route: properti/search]
+in APPPATH\Views\visit\properti\search.php on line 58.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/search', [], true)
+ 4 APPPATH\Controllers\Properti.php(115): view('visit/properti/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 20:54:02 --> Error: Call to undefined method CodeIgniter\Pager\Pager::hasPrevious()
+[Method: GET, Route: properti/search]
+in APPPATH\Views\visit\properti\search.php on line 59.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/search', [], true)
+ 4 APPPATH\Controllers\Properti.php(115): view('visit/properti/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 20:57:47 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: properti/search]
+in APPPATH\Views\visit\properti\search.php on line 70.
+ 1 APPPATH\Views\visit\properti\search.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\search.php', 70)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\properti\\search.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/search', [], true)
+ 5 APPPATH\Controllers\Properti.php(115): view('visit/properti/search', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-13 21:00:06 --> Error: Call to undefined method CodeIgniter\Pager\Pager::getTotalPages()
+[Method: GET, Route: properti/search]
+in APPPATH\Views\visit\properti\search.php on line 79.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/properti/search', [], true)
+ 4 APPPATH\Controllers\Properti.php(122): view('visit/properti/search', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Properti->search()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Properti))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')

@@ -1,0 +1,41 @@
+CRITICAL - 2024-11-16 11:12:11 --> ErrorException: Undefined variable $prop
+[Method: GET, Route: artikel/manfaat-dan-keuntungan-bisnis-properti]
+in APPPATH\Views\visit\artikel\detail-artikel.php on line 34.
+ 1 APPPATH\Views\visit\artikel\detail-artikel.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $prop', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\artikel\\detail-artikel.php', 34)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\artikel\\detail-artikel.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/artikel/detail-artikel', [], true)
+ 5 APPPATH\Controllers\Artikel.php(96): view('visit/artikel/detail-artikel', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->detail('manfaat-dan-keuntungan-bisnis-properti')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-16 11:22:28 --> BadMethodCallException: Call to undefined method App\Models\KatModel::countByCategory
+[Method: GET, Route: artikel/manfaat-dan-keuntungan-bisnis-properti]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\Artikel.php(82): CodeIgniter\Model->__call('countByCategory', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->detail('manfaat-dan-keuntungan-bisnis-properti')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
+CRITICAL - 2024-11-16 11:29:01 --> ErrorException: Undefined array key "formatted_date"
+[Method: GET, Route: artikel/manfaat-dan-keuntungan-bisnis-properti]
+in APPPATH\Views\visit\artikel\detail-artikel.php on line 105.
+ 1 APPPATH\Views\visit\artikel\detail-artikel.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "formatted_date"', 'F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\artikel\\detail-artikel.php', 105)
+ 2 SYSTEMPATH\View\View.php(234): include('F:\\PROJECT\\Proses\\properti2\\app\\Views\\visit\\artikel\\detail-artikel.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('visit/artikel/detail-artikel', [], true)
+ 5 APPPATH\Controllers\Artikel.php(104): view('visit/artikel/detail-artikel', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->detail('manfaat-dan-keuntungan-bisnis-properti')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('F:\\PROJECT\\Proses\\properti2\\public\\index.php')
